@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Edith Miranda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Edith Miranda</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre mí</a></li>
+                <li><a href="java-projects.html">Proyectos Java</a></li>
+                <li><a href="design-projects.html">Proyectos Diseño</a></li>
+                <li><a href="personal.html">Proyectos Personales</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="tech.html">Tecnologías</a></li>
+                <li><a href="cv.html">Currículum</a></li>
+                <li><a href="languages.html">Idiomas</a></li>
+                <li><a href="contact.html" class="active">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="container">
+        <div class="page-header">
+            <h1>Contacto</h1>
+            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem;">
+            
+            <!-- Información de contacto -->
+            <div>
+                <h2 style="margin-bottom: 2rem;">Formas de contacto</h2>
+                
+                <!-- Email -->
+                <div style="display: flex; align-items: start; margin-bottom: 2rem; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2rem; margin-right: 1rem;">📧</div>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Email</h3>
+                        <a href="mailto:tu.email@ejemplo.com" style="color: var(--green-dark); text-decoration: none;">
+                            tu.email@ejemplo.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- LinkedIn -->
+                <div style="display: flex; align-items: start; margin-bottom: 2rem; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2rem; margin-right: 1rem;">💼</div>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">LinkedIn</h3>
+                        <a href="https://linkedin.com/in/tu-perfil" target="_blank" style="color: var(--green-dark); text-decoration: none;">
+                            linkedin.com/in/tu-perfil
+                        </a>
+                    </div>
+                </div>
+
+                <!-- GitHub -->
+                <div style="display: flex; align-items: start; margin-bottom: 2rem; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2rem; margin-right: 1rem;">💻</div>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">GitHub</h3>
+                        <a href="https://github.com/tu-usuario" target="_blank" style="color: var(--green-dark); text-decoration: none;">
+                            github.com/tu-usuario
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Behance -->
+                <div style="display: flex; align-items: start; margin-bottom: 2rem; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2rem; margin-right: 1rem;">🎨</div>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Behance</h3>
+                        <a href="https://behance.net/tu-perfil" target="_blank" style="color: var(--green-dark); text-decoration: none;">
+                            behance.net/tu-perfil
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Teléfono (opcional) -->
+                <div style="display: flex; align-items: start; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 2rem; margin-right: 1rem;">📱</div>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Teléfono (Opcional)</h3>
+                        <a href="tel:+34123456789" style="color: var(--green-dark); text-decoration: none;">
+                            +34 123 456 789
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de contacto -->
+            <div>
+                <h2 style="margin-bottom: 2rem;">Envíame un mensaje</h2>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Enviar mensaje
+                    </button>
+
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #6b5d4f; text-align: center;">
+                        * Campos obligatorios
+                    </p>
+                </form>
+
+                <div style="margin-top: 2rem; padding: 1rem; background-color: rgba(47, 79, 79, 0.05); border-radius: 4px; border-left: 4px solid var(--green-forest);">
+                    <p style="font-size: 0.9rem; color: #6b5d4f; margin: 0;">
+                        <strong>Nota:</strong> Este es un formulario de ejemplo. Para que funcione, 
+                        necesitarás conectarlo a un servicio como Formspree, EmailJS o un backend propio.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Mensaje final -->
+        <section style="margin-top: 4rem; text-align: center; padding: 3rem 2rem; background: linear-gradient(135deg, var(--beige-light) 0%, var(--beige-warm) 100%); border-radius: 8px;">
+            <h2 style="margin-bottom: 1rem;">Estoy disponible para nuevos proyectos</h2>
+            <p style="font-size: 1.1rem; color: #6b5d4f; max-width: 600px; margin: 0 auto; line-height: 1.8;">
+                "[Tu mensaje final: qué tipo de colaboraciones buscas, tu actitud ante nuevos proyectos, 
+                o cualquier mensaje que quieras transmitir a potenciales clientes o empleadores]"
+            </p>
+        </section>
+    </div>
+
+    <!-- Botón volver arriba -->
+    <button id="scrollTopBtn" class="scroll-top" title="Volver arriba">↑</button>
+
+    <footer>
+        <p>&copy; 2025 Edith Miranda. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
